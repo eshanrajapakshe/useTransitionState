@@ -2,7 +2,7 @@
 
 > A React hook for managing element transitions with smooth CSS animations - a drop-in replacement for `useState` with built-in animation support.
 
-[![npm version](https://img.shields.io/npm/v/use-transition-state.svg)](https://www.npmjs.com/package/use-transition-state)
+[![npm version](https://img.shields.io/npm/v/@eshan.rajapakshe/use-transition-state.svg)](https://www.npmjs.com/package/@eshan.rajapakshe/use-transition-state)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## 🎮 Live Demo
@@ -22,7 +22,7 @@ In standard React, an element is instantly removed from the DOM when its state c
 ## 🚀 Installation
 
 ```bash
-npm install use-transition-state
+npm install @eshan.rajapakshe/use-transition-state
 ```
 
 ## 💡 Quick Start
@@ -48,7 +48,7 @@ const [isMounted, setIsVisible, ref] = useTransitionState<HTMLDivElement>(initia
 If you omit the options object entirely, the hook uses the default `'fade'` animation with a duration of 300ms.
 
 ```tsx
-import { useTransitionState } from 'use-transition-state';
+import { useTransitionState } from '@eshan.rajapakshe/use-transition-state';
 
 function SlideOutMenu() {
   // Same as useState, but returns a ref as the 3rd argument
@@ -101,7 +101,7 @@ const [isModalOpen, setModalOpen, modalRef] = useTransitionState(false, {
 For animations not covered by the presets, or to trigger logic when the element is fully removed from the DOM, use the full options API.
 
 ```tsx
-import { useTransitionState } from 'use-transition-state';
+import { useTransitionState } from '@eshan.rajapakshe/use-transition-state';
 
 function CustomBouncingComponent() {
   const [isVisible, setVisible, myRef] = useTransitionState(false, {
@@ -173,7 +173,7 @@ interface AnimationKeyframes {
 ### Modal Dialog
 
 ```tsx
-import { useTransitionState } from 'use-transition-state';
+import { useTransitionState } from '@eshan.rajapakshe/use-transition-state';
 
 function Modal({ children }) {
   const [isOpen, setIsOpen, modalRef] = useTransitionState(false, {
@@ -305,7 +305,7 @@ return (
 The hook is written in TypeScript and provides full type safety:
 
 ```typescript
-import { useTransitionState, TransitionOptions, TransitionEffectType } from 'use-transition-state';
+import { useTransitionState, TransitionOptions, TransitionEffectType } from '@eshan.rajapakshe/use-transition-state';
 
 // Generic type for element ref
 const [isOpen, setIsOpen, ref] = useTransitionState<HTMLDivElement>(false);

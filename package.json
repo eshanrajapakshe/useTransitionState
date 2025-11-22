@@ -1,5 +1,5 @@
 {
-  "name": "use-transition-state",
+  "name": "@eshan.rajapakshe/use-transition-state",
   "version": "1.0.0",
   "description": "A React hook for managing element transitions with smooth CSS animations - a drop-in replacement for useState with built-in animation support",
   "main": "./dist/cjs/index.js",

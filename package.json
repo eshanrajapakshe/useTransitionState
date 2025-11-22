@@ -1,0 +1,65 @@
+{
+  "name": "use-transition-state",
+  "version": "1.0.0",
+  "description": "A React hook for managing element transitions with smooth CSS animations - a drop-in replacement for useState with built-in animation support",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run build:esm && npm run build:cjs && npm run build:types",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "transition",
+    "animation",
+    "useState",
+    "css-transitions",
+    "react-hooks",
+    "ui-animation",
+    "mount",
+    "unmount",
+    "fade",
+    "slide",
+    "zoom",
+    "lifecycle"
+  ],
+  "author": "Eshan Rajapakshe",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eshanrajapakshe/useTransitionState.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eshanrajapakshe/useTransitionState/issues"
+  },
+  "homepage": "https://github.com/eshanrajapakshe/useTransitionState#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0"
+  }
+}
+
